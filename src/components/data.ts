@@ -1,4 +1,4 @@
-import collection from "../../Radrouten_Tirol.geojson.json";
+import collection from "../../geojson/Radrouten_Tirol.geojson.json";
 import type { GetStaticPaths } from "astro";
 
 export const features = (
