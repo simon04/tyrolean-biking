@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import RouteDetails from "../../components/RouteDetails.vue";
+import RouteMap from "../../components/RouteMap.vue";
+import { findRoute } from "../../components/data";
+export {  getStaticPaths } from "../../components/data";
+
+const feature = findRoute(Astro.params.number!)!
+---
+
+<Layout>
+  <RouteDetails feature={feature} />
+  <RouteMap client:only="vue" feature={feature} />
+</Layout>

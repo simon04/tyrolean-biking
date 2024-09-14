@@ -1,0 +1,30 @@
+---
+import "@picocss/pico/css/pico.css";
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>🚴 Tyrolean Biking</title>
+    <meta name="author" content="Simon Legner" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <ul>
+          <li><strong>🚴 Tyrolean Biking </strong></li>
+        </ul>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#links">Links</a></li>
+          <li><a href="https://github.com/simon04/tyrolean-biking">GitHub</a></li>
+        </ul>
+      </nav>
+      <slot />
+    </main>
+  </body>
+</html>
