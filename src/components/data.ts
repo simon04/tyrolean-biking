@@ -5,6 +5,7 @@ export const features = (
   collection as GeoJSON.FeatureCollection<GeoJSON.Geometry, RouteProperties>
 ).features
   .filter((f) => f.properties.ROUTENSEKTION_TYP !== "Variante")
+  .filter((f) => f.properties.ROUTENNUMMER)
   .sort((f1, f2) =>
     f1.properties.ROUTENNUMMER.padStart(10, "0").localeCompare(
       f2.properties.ROUTENNUMMER.padStart(10, "0"),
